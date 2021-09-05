@@ -1,9 +1,17 @@
-"""Template robot with Python."""
+from RPA.PDF import PDF
+
+pdf = PDF()
+
+list_of_files = [
+    'img1.png',
+    'img2.png',
+    'img3.png',
+    'img4.png',
+]
 
 
-def minimal_task():
-    print("Done.")
-
-
-if __name__ == "__main__":
-    minimal_task()
+def example_keyword():
+    pdf.add_files_to_pdf(
+        files=list_of_files,
+        target_document="output/output.pdf"
+    )
