@@ -7,6 +7,7 @@ def new_repo():
     browser.find_element('//a[@class="HeaderMenu-link flex-shrink-0 no-underline"]').click()
     browser.input_text('//*[@id="login_field"]', "daniyaltestdjango@gmail.com")
     browser.input_text('//*[@id="password"]', "testaccount1212")
+    browser.find_element('//*[@id="login"]/div[4]/form/div/input[12]').click()
     browser.wait_until_page_contains_element('//*[@id="repos-container"]/h2/a')
     browser.find_element('//*[@id="repos-container"]/h2/a').click()
     browser.input_text('//*[@id="repository_name"]', "new repository by bot")
