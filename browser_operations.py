@@ -14,8 +14,7 @@ def new_repo():
     browser.find_element('//*[@id="repos-container"]/h2/a').click()
     browser.input_text('//*[@id="repository_name"]', "new repository by bot")
     browser.wait_until_page_contains_element('//*[@id="new_repository"]/div[4]/button')
-    browser.find_element('//*[@id="new_repository"]/div[4]/button').click()
-    browser.find_element('/html/body/div[1]/header/div[1]/a/svg').click()
     sleep(10)
+    browser.find_element('//*[@id="new_repository"]/div[4]/button').click()
     browser.close_browser()
 
