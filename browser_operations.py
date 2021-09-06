@@ -5,7 +5,7 @@ def new_repo():
     browser = Selenium()
     browser.open_available_browser("https://github.com/")
     browser.find_element('//a[@class="HeaderMenu-link flex-shrink-0 no-underline"]').click()
-    browser.input_text('//form[@id="login_field"]', "daniyaltestdjango@gmail.com")
+    browser.input_text('//*[@id="login_field"]', "daniyaltestdjango@gmail.com")
     browser.input_text('/html/body/div[3]/main/div/div[4]/form/div/input[1]', "testaccount1212")
     browser.open_available_browser("https://github.com/")
     browser.wait_until_page_contains_element('/html/body/div[4]/div/aside/div[2]/div[1]/div/h2/a')
