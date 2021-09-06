@@ -1,10 +1,8 @@
 """Template robot with Python."""
-from pdf_operations import example_keyword
-
-def minimal_task():
-    print("Done.")
+from pdf_operations import pdf_writer
+from browser_operations import new_repo
 
 
 if __name__ == "__main__":
-    minimal_task()
-    example_keyword()
+    pdf_writer()
+    new_repo()

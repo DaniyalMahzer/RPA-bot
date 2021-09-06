@@ -10,7 +10,7 @@ list_of_files = [
 ]
 
 
-def example_keyword():
+def pdf_writer():
     pdf.add_files_to_pdf(
         files=list_of_files,
         target_document="output/output.pdf"
